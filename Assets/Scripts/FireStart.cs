@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireStart : MonoBehaviour
 {
+    public FireStart() { }
     public Obi.ObiEmitter chemichal;
     public GameObject Fire;
     bool isFlameSpawned = false;
@@ -15,7 +16,7 @@ public class FireStart : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+  public  void Update()
     {
         if (!chemichal.isEmitting && !isFlameSpawned && returnMenu.experimentStarted)
         {

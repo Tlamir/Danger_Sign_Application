@@ -16,6 +16,7 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
+    public FirstPersonController() { }
     private Rigidbody rb;
 
     #region Camera Movement Variables
@@ -364,7 +365,7 @@ public class FirstPersonController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+   void FixedUpdate()
     {
         #region Movement
 
@@ -459,7 +460,7 @@ public class FirstPersonController : MonoBehaviour
         }
     }
 
-    private void Jump()
+    public void Jump()
     {
         // Adds force to the player rigidbody to jump
         if (isGrounded)

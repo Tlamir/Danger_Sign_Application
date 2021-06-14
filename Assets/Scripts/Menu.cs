@@ -6,7 +6,8 @@ using TMPro;
 
 public class Menu : MonoBehaviour
 {
-   public GameObject inputFieldName;
+    public Menu() { }
+    public GameObject inputFieldName;
    public GameObject inputFieldSurnamne;
     public GameObject inputFieldId;
 
